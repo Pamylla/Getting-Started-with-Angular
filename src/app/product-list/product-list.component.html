@@ -1,0 +1,27 @@
+<h2>Products</h2>
+ 
+<!-- for any item, the app do this: -->
+<div *ngFor="let product of products">
+
+    <h3>
+        <!-- binding property-->
+        <a [title]="product.name + ' detail' ">
+            <!-- interpolation -->
+            {{ product.name }}
+        </a>       
+    </h3>
+
+    <!-- if any item select before ... do this: -->
+    <p *ngIf="product.description">
+    Description: {{ product.description }}
+    </p>
+
+    <!-- Event binding -->
+    <button (click)="share()"> Share</button>
+
+    <app-product-alerts 
+        [product]="product"
+        (notify)="onNotify()">
+    </app-product-alerts>
+
+</div>
