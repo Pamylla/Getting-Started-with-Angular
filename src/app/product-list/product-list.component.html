@@ -1,11 +1,11 @@
 <h2>Products</h2>
  
 <!-- for any item, the app do this: -->
-<div *ngFor="let product of products">
+<div *ngFor="let product of products; let i = index">
 
     <h3>
         <!-- binding property-->
-        <a [title]="product.name + ' detail'" [routerLink]="['/products','productId']"> 
+        <a [title]="product.name + ' detail'" [routerLink]="['/products', i]"> 
             <!-- interpolation -->
             {{ product.name }}
         </a>       
