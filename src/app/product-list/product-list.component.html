@@ -25,3 +25,15 @@
     </app-product-alerts>
 
 </div>
+
+<h3>Commets:</h3>
+
+<ng-container> 
+    <ul *ngIf="users">
+    <li *ngFor=" let user of users">
+        <img [src]="user.avatar">
+        <h4>{{ user.first_name }} {{ user.last_name }}</h4>
+    </li>
+</ul>
+</ng-container>
+

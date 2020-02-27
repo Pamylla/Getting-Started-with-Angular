@@ -1,1 +1,30 @@
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    background-color: #1976d2;
+    padding: 2em;
+    border-radius: 4px;
+    margin-bottom: 7px;
+    display: grid;
+    grid-template-columns: 60px auto;
+}
+
+h4 {
+    font-weight: bold;
+    margin-left: auto;
+    color: black;
+}
+
+img {
+    border-radius: 2em;
+}
+
+h3{
+    text-align: center;
+    color: black;
+}
