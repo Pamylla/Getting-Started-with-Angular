@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -12,10 +13,12 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { ContactComponent } from './contact/contact.component';
+import { HeroListEnterLeaveComponent } from './hero-list-enter-leave/hero-list-enter-leave.component';
 
 @NgModule({
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     ReactiveFormsModule,
     ReactiveFormsModule,
@@ -35,7 +38,8 @@ import { ContactComponent } from './contact/contact.component';
     ProductAlertsComponent,
     CartComponent,
     ShippingComponent,
-    ContactComponent
+    ContactComponent,
+    HeroListEnterLeaveComponent
   ],
   bootstrap: [ AppComponent ]
 })
